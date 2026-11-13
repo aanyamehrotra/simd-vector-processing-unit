@@ -1,0 +1,26 @@
+name: Verilog simulation
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Icarus Verilog
+        run: sudo apt-get update && sudo apt-get install -y iverilog
+      - name: Run component and integrated tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build
+          for unit in alu_lane vector_control vector_regfile simd_top; do
+            iverilog -g2012 -Wall -s tb_$unit -o build/$unit.vvp rtl/*.v tb/tb_$unit.v
+            vvp build/$unit.vvp | tee build/$unit.log
+            grep -q PASS build/$unit.log
+            if grep -q FAIL build/$unit.log; then exit 1; fi
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: simulation-evidence
+          path: |
+            build/*.log
+            *.vcd
