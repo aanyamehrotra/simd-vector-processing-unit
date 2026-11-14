@@ -12,7 +12,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p build
-          for unit in alu_lane vector_control vector_regfile simd_top; do
+          for unit in alu_lane vector_control vector_regfile simd_top scalar_top performance; do
             iverilog -g2012 -Wall -s tb_$unit -o build/$unit.vvp rtl/*.v tb/tb_$unit.v
             vvp build/$unit.vvp | tee build/$unit.log
             grep -q PASS build/$unit.log
@@ -24,3 +24,4 @@ jobs:
           path: |
             build/*.log
             *.vcd
+            performance.csv
