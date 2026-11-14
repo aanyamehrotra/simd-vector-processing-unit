@@ -84,8 +84,8 @@ Each host vector load takes an additional accepted write edge. Operand
 loading, result transfers and any software overhead are excluded from the
 compute-only throughput above. Four physical lanes do not by themselves
 prove a measured 4× system speed-up. A scalar baseline must use an explicit,
-comparable workload and timing boundary. Scalar implementation and benchmark
-work remain separate deliverables.
+comparable workload and timing boundary. The scalar implementation and measured benchmark are now complete; see
+[the matched comparison](performance.md).
 
 ## Verification evidence
 
@@ -109,8 +109,8 @@ it is not a count of independent vector instructions.
 The run's `simulation-evidence` artifact contains test logs and VCD files.
 The SIMD VCD records the initial directed tests; dumping is disabled before
 the pseudorandom sweep to keep the waveform small. Passing assertions
-establish the tested behaviour. Manual waveform inspection and screenshots
-for the report/video remain to be completed.
+establish the tested behaviour. The committed [waveform evidence](waveform_verification.md) adds an actual-VCD
+rendering and the directed ADD interpretation used in the IEEE report.
 
 To reproduce from the repository root with Icarus Verilog installed:
 
@@ -130,9 +130,9 @@ It has no instruction memory, cache, external memory controller, pipeline,
 lane masks or overflow flags. Comparison is unsigned; it is not a signed
 comparison or a full-byte predicate mask.
 
-FPGA part selection, synthesis resource counts, timing constraints, maximum
-operating frequency, scalar-versus-SIMD measured speed-up and hardware-board
-demonstration have not been produced by this implementation. They must be
-reported from actual tools and experiments when completed. The Phase I IEEE
-report also still needs its Abstract, Literature Review, actual Individual
-Contributions and References, alongside this technical section.
+The [IEEE report](../report/Phase_I_IEEE_Report.pdf) includes Abstract, Literature
+Review, Proposed Solution, Results, four-member Contributions, Conclusion and
+References. Measured scalar comparison and target-specific synthesis and routed
+internal clock estimates are supplied in [performance.md](performance.md) and
+[results.json](../evidence/results.json). Board-specific I/O constraints and a
+physical-board demonstration remain outside the present prototype.

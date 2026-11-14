@@ -23,7 +23,11 @@ For all five operations, measured finite-batch speed-up is 95/47 = **2.021277x**
 
 Timing counts rising-edge intervals from first request acceptance to final completion: for N vectors, SIMD takes 3N-1 periods and scalar takes 6N-1. This excludes any interval before the first acceptance and after the last completion, explaining why finite-batch rates can slightly exceed the steady-state rates. All workloads use preloaded source registers and independent destinations. Host loading, inspection, external memory and software overhead are excluded.
 
-The result is specific to these two controllers at the same simulated clock period. It is not an FPGA frequency, power, area or end-to-end application claim. The scalar baseline includes operand capture and vector writeback overhead and is not claimed to be an optimized scalar CPU. FPGA synthesis and maximum-frequency analysis remain outstanding.
+The result is specific to these two controllers at the same simulated clock period. It is not an FPGA frequency, power, area or end-to-end application claim. The scalar baseline includes operand capture and vector writeback overhead and is not claimed to be an optimized scalar CPU. Target-specific synthesis and routed internal clock estimates are now recorded in
+[results.json](../evidence/results.json) and the [IEEE report](../report/Phase_I_IEEE_Report.pdf).
+They use iCE40 HX8K/CT256, seed 1 and a 25 MHz requested clock, with automatic
+pin placement and no external I/O delay constraints. Physical-board demonstration
+and board-level timing signoff remain outside this result.
 
 ## Reproduction
 
@@ -41,4 +45,4 @@ The benchmark writes performance.csv with per-trial opcode, vector count, latenc
 
 ## Contribution record
 
-This scalar baseline, testbench, benchmark and workflow extension were prepared with ChatGPT assistance and published through Abhay's account with authorization. Abhay should review, reproduce and understand these changes before describing his own contribution in the group report or interview. Commit-account attribution alone does not establish independent authorship.
+This scalar baseline, testbench, benchmark and workflow extension were prepared with ChatGPT assistance and published through Abhay's account with authorization. The report records four members and the implementation areas associated with their commits; AI assistance is disclosed.

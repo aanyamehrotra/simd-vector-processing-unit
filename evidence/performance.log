@@ -1,0 +1,28 @@
+VCD info: dumpfile tb_performance.vcd opened for output.
+op=0 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=1 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=2 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=3 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=4 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=0 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=1 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=2 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=3 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=4 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=0 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=1 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=2 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=3 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=4 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=0 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=1 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=2 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=3 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=4 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=0 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=1 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=2 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=3 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+op=4 vectors=16 SIMD=47 scalar=95 cycles speedup=2.021277
+PASS tb_performance: 25 batches, 400 vectors per architecture
+tb/tb_performance.v:104: $finish called at 24217000 (1ps)

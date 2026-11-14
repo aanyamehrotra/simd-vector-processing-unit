@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" font-size="15" fill="#111">
+<text x="16" y="24" font-size="18">SIMD directed ADD — actual Icarus VCD</text>
+<path d="M 275.55555555555554 38 V 522" stroke="#ddd"/>
+<text x="275.55555555555554" y="545" text-anchor="middle">90</text>
+<path d="M 476.66666666666663 38 V 522" stroke="#ddd"/>
+<text x="476.66666666666663" y="545" text-anchor="middle">100</text>
+<path d="M 677.7777777777778 38 V 522" stroke="#ddd"/>
+<text x="677.7777777777778" y="545" text-anchor="middle">110</text>
+<path d="M 878.8888888888889 38 V 522" stroke="#ddd"/>
+<text x="878.8888888888889" y="545" text-anchor="middle">120</text>
+<path d="M 1080.0 38 V 522" stroke="#ddd"/>
+<text x="1080.0" y="545" text-anchor="middle">130</text>
+<text x="8" y="76">clk</text>
+<path d="M 175.0 65 H 275.55555555555554" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 275.55555555555554 65 V 85" stroke="#15567b"/>
+<path d="M 275.55555555555554 85 H 376.1111111111111" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 376.1111111111111 65 V 85" stroke="#15567b"/>
+<path d="M 376.1111111111111 65 H 476.66666666666663" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 476.66666666666663 65 V 85" stroke="#15567b"/>
+<path d="M 476.66666666666663 85 H 577.2222222222222" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 577.2222222222222 65 V 85" stroke="#15567b"/>
+<path d="M 577.2222222222222 65 H 677.7777777777778" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 677.7777777777778 65 V 85" stroke="#15567b"/>
+<path d="M 677.7777777777778 85 H 778.3333333333333" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 778.3333333333333 65 V 85" stroke="#15567b"/>
+<path d="M 778.3333333333333 65 H 878.8888888888889" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 878.8888888888889 65 V 85" stroke="#15567b"/>
+<path d="M 878.8888888888889 85 H 979.4444444444443" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 979.4444444444443 65 V 85" stroke="#15567b"/>
+<path d="M 979.4444444444443 65 H 1080.0" fill="none" stroke="#15567b" stroke-width="2"/>
+<text x="8" y="116">start</text>
+<path d="M 175.0 125 H 275.55555555555554" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 275.55555555555554 105 V 125" stroke="#15567b"/>
+<path d="M 275.55555555555554 105 H 878.8888888888889" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 878.8888888888889 105 V 125" stroke="#15567b"/>
+<path d="M 878.8888888888889 125 H 1080.0" fill="none" stroke="#15567b" stroke-width="2"/>
+<text x="8" y="156">busy</text>
+<path d="M 175.0 165 H 376.1111111111111" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 376.1111111111111 145 V 165" stroke="#15567b"/>
+<path d="M 376.1111111111111 145 H 778.3333333333333" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 778.3333333333333 145 V 165" stroke="#15567b"/>
+<path d="M 778.3333333333333 165 H 1080.0" fill="none" stroke="#15567b" stroke-width="2"/>
+<text x="8" y="196">done</text>
+<path d="M 175.0 205 H 778.3333333333333" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 778.3333333333333 185 V 205" stroke="#15567b"/>
+<path d="M 778.3333333333333 185 H 979.4444444444443" fill="none" stroke="#15567b" stroke-width="2"/>
+<path d="M 979.4444444444443 185 V 205" stroke="#15567b"/>
+<path d="M 979.4444444444443 205 H 1080.0" fill="none" stroke="#15567b" stroke-width="2"/>
+<text x="8" y="236">A captured</text>
+<path d="M 175.0 235 l 4 -10 H 372.1111111111111 l 4 10 l -4 10 H 179.0 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="275.55555555555554" y="240" text-anchor="middle">00000000</text>
+<path d="M 376.1111111111111 235 l 4 -10 H 1076.0 l 4 10 l -4 10 H 380.1111111111111 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="728.0555555555555" y="240" text-anchor="middle">FF800003</text>
+<text x="8" y="276">B captured</text>
+<path d="M 175.0 275 l 4 -10 H 372.1111111111111 l 4 10 l -4 10 H 179.0 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="275.55555555555554" y="280" text-anchor="middle">00000000</text>
+<path d="M 376.1111111111111 275 l 4 -10 H 1076.0 l 4 10 l -4 10 H 380.1111111111111 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="728.0555555555555" y="280" text-anchor="middle">0180FF05</text>
+<text x="8" y="316">result</text>
+<path d="M 175.0 315 l 4 -10 H 372.1111111111111 l 4 10 l -4 10 H 179.0 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="275.55555555555554" y="320" text-anchor="middle">00000000</text>
+<path d="M 376.1111111111111 315 l 4 -10 H 1076.0 l 4 10 l -4 10 H 380.1111111111111 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="728.0555555555555" y="320" text-anchor="middle">0000FF08</text>
+<text x="8" y="356">lane 0</text>
+<path d="M 175.0 355 l 4 -10 H 372.1111111111111 l 4 10 l -4 10 H 179.0 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="275.55555555555554" y="360" text-anchor="middle">00</text>
+<path d="M 376.1111111111111 355 l 4 -10 H 1076.0 l 4 10 l -4 10 H 380.1111111111111 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="728.0555555555555" y="360" text-anchor="middle">08</text>
+<text x="8" y="396">lane 1</text>
+<path d="M 175.0 395 l 4 -10 H 372.1111111111111 l 4 10 l -4 10 H 179.0 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="275.55555555555554" y="400" text-anchor="middle">00</text>
+<path d="M 376.1111111111111 395 l 4 -10 H 1076.0 l 4 10 l -4 10 H 380.1111111111111 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="728.0555555555555" y="400" text-anchor="middle">FF</text>
+<text x="8" y="436">lane 2</text>
+<path d="M 175.0 435 l 4 -10 H 1076.0 l 4 10 l -4 10 H 179.0 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="627.5" y="440" text-anchor="middle">00</text>
+<text x="8" y="476">lane 3</text>
+<path d="M 175.0 475 l 4 -10 H 1076.0 l 4 10 l -4 10 H 179.0 Z" fill="#f0f5f8" stroke="#15567b"/>
+<text x="627.5" y="480" text-anchor="middle">00</text>
+<path d="M 376.1111111111111 35 V 522" stroke="#a33" stroke-dasharray="4 3"/>
+<text x="381.1111111111111" y="44" fill="#a33">accept</text>
+<path d="M 778.3333333333333 35 V 522" stroke="#a33" stroke-dasharray="4 3"/>
+<text x="783.3333333333333" y="44" fill="#a33">writeback / done</text>
+<text x="1060" y="545">ns</text>
+</g></svg>

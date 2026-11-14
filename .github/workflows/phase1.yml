@@ -1,0 +1,27 @@
+name: Phase I report and FPGA evaluation
+on: [push, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  phase1:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install simulation, FPGA and report tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y iverilog yosys nextpnr-ice40 fpga-icestorm texlive-latex-base texlive-latex-recommended texlive-pictures texlive-publishers poppler-utils librsvg2-bin
+      - name: Build and validate the complete Phase I package
+        run: bash scripts/build_phase1.sh
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: phase1-package
+          path: |
+            report/Phase_I_IEEE_Report.pdf
+            report/preview/*.png
+            report/generated_metrics.tex
+            report/main.log
+            evidence/
+            build/*.log

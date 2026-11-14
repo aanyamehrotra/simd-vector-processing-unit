@@ -1,0 +1,2 @@
+PASS tb_vector_control
+tb/tb_vector_control.v:68: $finish called at 176000 (1ps)

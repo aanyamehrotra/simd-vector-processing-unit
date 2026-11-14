@@ -1,0 +1,7 @@
+VCD info: dumpfile tb_alu_lane.vcd opened for output.
+Directed tests
+  29 directed checks, 0 errors
+Exhaustive sweep (8 opcodes x 256 x 256)
+
+PASS: 524317 checks, 0 errors
+tb/tb_alu_lane.v:150: $finish called at 524317000 (1ps)

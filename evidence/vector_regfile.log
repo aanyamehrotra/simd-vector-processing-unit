@@ -1,0 +1,2 @@
+PASS tb_vector_regfile
+tb/tb_vector_regfile.v:80: $finish called at 67000 (1ps)

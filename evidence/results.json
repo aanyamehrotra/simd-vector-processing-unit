@@ -1,0 +1,60 @@
+{
+  "device": "iCE40 HX8K",
+  "package": "CT256",
+  "seed": 1,
+  "target_clock_mhz": 25,
+  "io_constraints": "automatic pin placement; no board pinout or external input/output delays",
+  "fpga": {
+    "simd_top": {
+      "lut4": 427,
+      "flip_flops": 201,
+      "carry": 88,
+      "bram": 0,
+      "routed_internal_fmax_mhz": 114.1,
+      "cells": {
+        "SB_LUT4": 427,
+        "SB_DFFSR": 1,
+        "SB_DFF": 3,
+        "SB_DFFESR": 165,
+        "SB_CARRY": 88,
+        "SB_DFFE": 32
+      }
+    },
+    "scalar_top": {
+      "lut4": 347,
+      "flip_flops": 234,
+      "carry": 23,
+      "bram": 0,
+      "routed_internal_fmax_mhz": 82.86,
+      "cells": {
+        "SB_LUT4": 347,
+        "SB_DFFESR": 201,
+        "SB_DFFSR": 1,
+        "SB_CARRY": 23,
+        "SB_DFFE": 32
+      }
+    }
+  },
+  "simulation": {
+    "simd_checks": 1678,
+    "scalar_checks": 2503,
+    "alu_checks": 524317,
+    "benchmark_rows": 25,
+    "vectors_each": 400,
+    "simd_batch_cycles": 47,
+    "scalar_batch_cycles": 95,
+    "speedup": 2.021276595744681
+  },
+  "waveform": {
+    "source": "tb_simd_top.vcd",
+    "sha256": "8e9739eab5dfc0aef3bdec6190652e3a920dd76e337a7da1c93a8fa18a92dcd4",
+    "accept_ns": 95.0,
+    "done_ns": 115.0,
+    "lanes_low_to_high": [
+      8,
+      255,
+      0,
+      0
+    ]
+  }
+}
