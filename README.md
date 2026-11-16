@@ -4,6 +4,7 @@ Four parallel 8-bit lanes execute a shared operation on 32-bit vectors. The proj
 
 ## Phase I submission
 
+- [Prototype/demo video](https://canva.link/s8iv1nrwflr6duo)
 - [IEEE project report (PDF)](report/Phase_I_IEEE_Report.pdf)
 - [Editable IEEEtran LaTeX source](report/main.tex)
 - [Architecture and host interface](docs/architecture.md)
@@ -14,7 +15,7 @@ Four parallel 8-bit lanes execute a shared operation on 32-bit vectors. The proj
 - [Phase I checklist](docs/phase1_checklist.md)
 - [Automated builds](https://github.com/aanyamehrotra/simd-vector-processing-unit/actions)
 
-The video is excluded from this preparation task. No video link has been invented or submitted. The confirmed project group has **four members**; the supplied evaluation notice refers to five, so the submitted group size should follow the instructor's applicable arrangement.
+The confirmed project group has **four members**; the supplied evaluation notice refers to five, so the submitted group size should follow the instructor's applicable arrangement.
 
 ## Architecture
 
